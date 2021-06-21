@@ -1,23 +1,17 @@
 # Laravel Analytics
 
-[![Latest Stable Version](https://poser.pugx.org/andreaselia/analytics/v)](//packagist.org/packages/andreaselia/analytics)
-
-Easily collect page view analytics with a beautifully simple to use dashboard.
-
-![Laravel Analytics Dashboard](/screenshot.png?raw=true "Laravel Analytics Dashboard")
-
 ## Installation
 
 Install the package:
 
 ```bash
-composer require andreaselia/analytics
+composer require nurmuhammet.ali/analytics
 ```
 
 Publish the config file and assets:
 
 ```bash
-php artisan vendor:publish --provider="AndreasElia\Analytics\AnalyticsServiceProvider"
+php artisan vendor:publish --provider="Nurmuhammet\Analytics\AnalyticsServiceProvider"
 ```
 
 Don't forget to run the migrations:
@@ -41,7 +35,7 @@ Or add the page view to all middlewares/on an application level like so:
 
 protected $middleware = [
     // ...
-    \AndreasElia\Analytics\Http\Middleware\Analytics::class,
+    \Nurmuhammet\Analytics\Http\Middleware\Analytics::class,
 ];
 ```
 
