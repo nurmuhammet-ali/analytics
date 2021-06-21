@@ -1,10 +1,10 @@
 <?php
 
-namespace AndreasElia\Analytics;
+namespace Nurmuhammet\Analytics;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use AndreasElia\Analytics\Http\Middleware\Analytics;
+use Nurmuhammet\Analytics\Http\Middleware\Analytics;
 
 class AnalyticsServiceProvider extends ServiceProvider
 {
@@ -45,7 +45,7 @@ class AnalyticsServiceProvider extends ServiceProvider
     protected function routeConfig(): array
     {
         return [
-            'namespace' => 'AndreasElia\Analytics\Http\Controllers',
+            'namespace' => 'Nurmuhammet\Analytics\Http\Controllers',
             'prefix' => config('analytics.prefix'),
             'middleware' => config('analytics.middleware'),
         ];

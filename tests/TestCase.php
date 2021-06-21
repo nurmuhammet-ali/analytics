@@ -1,8 +1,8 @@
 <?php
 
-namespace AndreasElia\Analytics\Tests;
+namespace Nurmuhammet\Analytics\Tests;
 
-use AndreasElia\Analytics\AnalyticsServiceProvider;
+use Nurmuhammet\Analytics\AnalyticsServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

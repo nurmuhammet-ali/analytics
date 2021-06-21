@@ -16,6 +16,7 @@ class CreatePageViewsTable extends Migration
         Schema::create('page_views', function (Blueprint $table) {
             $table->id();
             $table->string('uri');
+            $table->string('ip');
             $table->string('source')->nullable();
             $table->string('country');
             $table->string('browser')->nullable();

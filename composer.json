@@ -1,16 +1,12 @@
 {
-    "name": "andreaselia/analytics",
-    "description": "Analytics for the Laravel framework.",
+    "name": "nurmuhammet.ali/analytics",
+    "description": "AndreasElia/laravel-analytics alternative, but with IP column",
     "keywords": ["laravel", "analytics", "middleware", "package"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Andreas Elia",
-            "email": "contact@andreaselia.co.uk"
-        },
-        {
-            "name": "Tom Irons",
-            "email": "tom@irons.pw"
+            "name": "Nurmuhammet Allanov",
+            "email": "nurmuhammet@mail.com"
         }
     ],
     "require": {
@@ -25,18 +21,18 @@
     },
     "autoload": {
         "psr-4": {
-            "AndreasElia\\Analytics\\": "src/"
+            "Nurmuhammet\\Analytics\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AndreasElia\\Analytics\\Tests\\": "tests/"
+            "Nurmuhammet\\Analytics\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AndreasElia\\Analytics\\AnalyticsServiceProvider"
+                "Nurmuhammet\\Analytics\\AnalyticsServiceProvider"
             ]
         }
     },

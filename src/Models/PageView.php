@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\Analytics\Models;
+namespace Nurmuhammet\Analytics\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,7 @@ class PageView extends Model
         'country',
         'browser',
         'device',
+        'ip'
     ];
 
     public function setSourceAttribute($value): void

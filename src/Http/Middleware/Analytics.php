@@ -1,11 +1,11 @@
 <?php
 
-namespace AndreasElia\Analytics\Http\Middleware;
+namespace Nurmuhammet\Analytics\Http\Middleware;
 
 use Closure;
 use Jenssegers\Agent\Agent;
 use Illuminate\Http\Request;
-use AndreasElia\Analytics\Models\PageView;
+use Nurmuhammet\Analytics\Models\PageView;
 
 class Analytics
 {
@@ -30,6 +30,7 @@ class Analytics
             'country' => $agent->languages()[0] ?? 'en-en',
             'browser' => $agent->browser() ?? null,
             'device' => $agent->deviceType(),
+            'ip' => $request->ip
         ]);
 
         return $response;

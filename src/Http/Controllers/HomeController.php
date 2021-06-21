@@ -1,13 +1,13 @@
 <?php
 
-namespace AndreasElia\Analytics\Http\Controllers;
+namespace Nurmuhammet\Analytics\Http\Controllers;
 
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use AndreasElia\Analytics\Models\PageView;
+use Nurmuhammet\Analytics\Models\PageView;
 
 class HomeController extends Controller
 {
@@ -44,14 +44,14 @@ class HomeController extends Controller
     {
         return [
             [
-                'key' => 'Unique Users',
+                'key' => 'Unikal ulanyjylar',
                 'value' => PageView::query()
                     ->scopes(['filter' => [$this->period]])
                     ->groupBy('session')
                     ->count(),
             ],
             [
-                'key' => 'Page Views',
+                'key' => 'Görünlen sany',
                 'value' => PageView::query()
                     ->scopes(['filter' => [$this->period]])
                     ->count(),
